@@ -2,5 +2,5 @@
 
 ## 1. install tensorflow
 - ### www.tensorflow.org/install/install_windows 참조
-    conda create -n tensorflow python = your_version
+    >conda create -n tensorflow python = your_version
     >(tensorflow) C:\Users\arago>
