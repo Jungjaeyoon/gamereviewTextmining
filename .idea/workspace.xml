@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38595241-b490-4eff-8e8b-6878fb09a4e9" name="Default" comment="" />
+    <list default="true" id="38595241-b490-4eff-8e8b-6878fb09a4e9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/topic_modeling/word2vec/topic_word2vec.ipynb" afterPath="$PROJECT_DIR$/topic_modeling/word2vec/topic_word2vec.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic_word2vec.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topic_word2vec.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic_modeling/word2vec/topic_word2vec.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentiment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sentiment_analysis/sentiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -37,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -51,6 +63,7 @@
         <option value="$PROJECT_DIR$/topic_modeling/word2vec/word_embeddings_reviews.ipynb" />
         <option value="$PROJECT_DIR$/topic_modeling/word2vec/word2vec_topic.py" />
         <option value="$PROJECT_DIR$/topic_modeling/word2vec/topic_word2vec.ipynb" />
+        <option value="$PROJECT_DIR$/sentiment_analysis/sentiment.py" />
       </list>
     </option>
   </component>
@@ -214,6 +227,14 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_analysis/sentiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
