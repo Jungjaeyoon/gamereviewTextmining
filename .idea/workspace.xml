@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38595241-b490-4eff-8e8b-6878fb09a4e9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/topic_modeling/word2vec/word_embeddings_reviews.ipynb" />
-      <change beforePath="$PROJECT_DIR$/.idea/gamereviewTextmining.iml" afterPath="$PROJECT_DIR$/.idea/gamereviewTextmining.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/topic_modeling/word2vec/readme.md" afterPath="$PROJECT_DIR$/topic_modeling/word2vec/readme.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,6 +78,12 @@
               <item name="gamereviewTextmining" type="b2602c69:ProjectViewProjectNode" />
               <item name="gamereviewTextmining" type="462c0819:PsiDirectoryNode" />
               <item name="topic_modeling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamereviewTextmining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamereviewTextmining" type="462c0819:PsiDirectoryNode" />
+              <item name="topic_modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="LDA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gamereviewTextmining" type="b2602c69:ProjectViewProjectNode" />
