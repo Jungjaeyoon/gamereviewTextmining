@@ -77,4 +77,4 @@
             lda_results = pd.DataFrame(lda_results,columns = ['Topic_N','Words'])
             lda_results.to_csv('LDA_results_JJNNPOS%s_%s.csv' % (x, s))
       </pre></code>       
-3. ### ㅇ
+    3. ### ㅇ
