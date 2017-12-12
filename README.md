@@ -16,3 +16,37 @@
   * #### data_scrap : how to collect review data from metacritic.com
   * #### topic_modeling : topic modeling with LDA and word2vec
   * #### sentiment_analysis : sentiment scoring for each topic
+
+
+
+## 1. Data Scrap
+  ### scrap data from metacritic.com
+
+
+## 2. Topic modeling
+  ### 2.1 topic modeling using LDA
+  #### Use NLTK, Sklearn
+  #### 각 게임 제품 리뷰가 어떤 주제들로 구성되어있을까?
+  - #### 토픽 생성을 위한 과정
+    1. #### 기본 전처리 과정
+      - #### 토큰화
+        <pre><code> nltk.tokenize.sent_tokenize() </pre></code>
+      - #### stemming
+        nltk의 SnowballStemmer 사용
+      - #### stop words 제거
+        기본 stop words list에 추가로 제거할 단어 입력
+       <pre><code>stop=nltk.corpus.stopwords.words('english') # basic stop words list
+       stop+=["!","...",")","(","/",".",",","?","-","''","``","'d",":",";","***","*","%","$","@","#","&","+","~","'s","n't","'m","'d"] # puntuation, symbols
+       additionalstop = ['game','make','un', 'es', 'juego', 'la', 'el', 'con', 'lo', 'los', 'para', 'una', 'si', 'se', 'por', 'le'] #해석불가한 단어들
+       gametitle # 게임 제목
+       stop+= additionalstop
+       stop+= gametitle       
+       </pre></code>
+
+       - #### 길이, 빈도 기반 단어 제거
+        - 길이가 1인 단어 제거
+        - 단어 분포 확인 후 빈도가 낮은 단어 제거
+
+
+        
+        ![Alttext](sentiment_analysis/img/freqdist.png "word distribution")
