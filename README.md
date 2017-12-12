@@ -46,9 +46,10 @@
        - #### 길이, 빈도 기반 단어 제거
         - 길이가 1인 단어 제거
         - 단어 분포 확인 후 빈도가 낮은 단어 제거(100으로 설정)
+        - 품사 기반 단어 선택
+          - pos tagging을 통해 명사와 동사로 토픽 구성
 
-          ![Alttext](sentiment_analysis/img/freqdist.png "word distribution")
-        상위 단어가 대다수 비중을 차지함을 확인
+![Alttext](sentiment_analysis/img/freqdist.png "word distribution")
 
     2. ### LDA 코드 실행
      #### 몇 개의 토픽으로 설정할 것인지 확인하기 위해 여러 토픽 수, alpha를 주며 결과 확인
