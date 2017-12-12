@@ -54,26 +54,28 @@
     2. ### LDA 코드 실행
      #### 몇 개의 토픽으로 설정할 것인지 확인하기 위해 여러 토픽 수, alpha를 주며 결과 확인
      #### term-frequency matrix를 입력으로, 결과 해석을 위해 feature name을 추출해둠
-<pre><code>countvec=CountVectorizer()
-tf_lda=countvec.fit_transform(doc2)
-topic_X=tf_lda.toarray()
-vocab=countvec.get_feature_names() #sen-topic에서 topic 검색 단어로 쓰임
-</pre></code>
+    <pre><code>countvec=CountVectorizer()
+    tf_lda=countvec.fit_transform(doc2)
+    topic_X=tf_lda.toarray()
+    vocab=countvec.get_feature_names() #sen-topic에서 topic 검색 단어로 쓰임
+    </pre></code>
 
- #### topic 수를 3~7까지 조정하며 결과 확인
+    #### topic 수를 3~7까지 조정하며 결과 확인
 
-<pre><code>
-for x in [3,4,5,6,7]:
-    for s in [0.05,0.1,0.15,0.2]:
-      model=lda.LDA(n_topics= x ,n_iter=500,random_state=6,alpha = s)
-      model.fit(topic_X)
-      topic_word=model.topic_word_
-      n_top_words=20
-      lda_results = []
-      for i, topic_dist in enumerate(topic_word):
-          topic_words=np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
-          print('Topic',i,topic_words)
-          lda_results.append([i,topic_words])
-      lda_results = pd.DataFrame(lda_results,columns = ['Topic_N','Words'])
-      lda_results.to_csv('LDA_results_JJNNPOS%s_%s.csv' % (x, s))
-</pre></code>       
+    <pre><code>
+    for x in [3,4,5,6,7]:
+        for s in [0.05,0.1,0.15,0.2]:
+          model=lda.LDA(n_topics= x ,n_iter=500,random_state=6,alpha = s)
+          model.fit(topic_X)
+          topic_word=model.topic_word_
+          n_top_words=20
+          lda_results = []
+          for i, topic_dist in enumerate(topic_word):
+              topic_words=np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
+              print('Topic',i,topic_words)
+              lda_results.append([i,topic_words])
+          lda_results = pd.DataFrame(lda_results,columns = ['Topic_N','Words'])
+          lda_results.to_csv('LDA_results_JJNNPOS%s_%s.csv' % (x, s))
+    </pre></code>       
+
+    3. ### LDA result
