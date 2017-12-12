@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 import nltk;import pandas as pd;import numpy as np
 from nltk.stem.snowball import SnowballStemmer;from nltk import ngrams
 from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer; from sklearn import linear_model
@@ -56,7 +49,7 @@ stop+= ntoken
 singels_snowball2=[]
 for singles in singles_snowball:
     singles2=[word for word in singles if word not in stop]
-    singles2=[a for a in singles2 if len(a)!=1] #한 글자 지우기 
+    singles2=[a for a in singles2 if len(a)!=1] #한 글자 지우기
     singels_snowball2.append(singles2)
 
 
@@ -106,7 +99,7 @@ for p in pos2:
 sin_snowball2=[]
 for singles in sin_snowball:
     singles2=[word for word in singles if word not in stop]
-    singles2=[a for a in singles2 if len(a)!=1] #한 글자 지우기 
+    singles2=[a for a in singles2 if len(a)!=1] #한 글자 지우기
     sin_snowball2.append(singles2)
 
 
@@ -162,4 +155,3 @@ for x in [3,4,5,6,7]:
             lda_results.append([i,topic_words])
         lda_results = pd.DataFrame(lda_results,columns = ['Topic_N','Words'])
         lda_results.to_csv('LDA_results_JJNNPOS%s_%s.csv' % (x, s))
-
