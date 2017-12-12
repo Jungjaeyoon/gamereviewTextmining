@@ -59,7 +59,7 @@ topic_X=tf_lda.toarray()
 vocab=countvec.get_feature_names() #sen-topic에서 topic 검색 단어로 쓰임
 </pre></code>
 
-     #### topic 수를 3~7까지 조정하며 결과 확인
+ #### topic 수를 3~7까지 조정하며 결과 확인
 
 <pre><code>
 for x in [3,4,5,6,7]:
